@@ -79,6 +79,25 @@
         .animate-blink-dot {
             animation: blink-dot 1s infinite;
         }
+
+        .hr-container {
+            position: relative;
+        }
+
+        .hr-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to right, transparent, #00ff00);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .hr-container:hover .hr-overlay {
+            opacity: 1;
+        }
     </style>
 </head>
 
@@ -111,6 +130,7 @@
 
         <hr>
     </div>
+
     <div class="container mx-auto p-8 flex flex-col md:flex-row">
         <!-- Web Developer Section -->
         <div class="flex-1 mb-8 md:mr-6">
@@ -126,7 +146,7 @@
                     into the basics of back-end development. My journey involves continuous learning, hands-on practice,
                     and a genuine curiosity to understand the intricacies of web development.
                     Join me as I embark on this exciting adventure in the realm of coding!
-                </p>git 
+                </p>
 
             </div>
             <div>
@@ -144,29 +164,7 @@
     - Servlet
     - Mysql
     - and much more<span class="animate-blink-dot text-gray-400">.</span><span class="animate-blink-dot text-gray-400">.</span><span class="animate-blink-dot text-gray-400">.</span>
-</div>
-    <footer class="bg-black p-4 mt-8">
-        <div class="container mx-auto text-center text-black">
-            <div class="flex items-center justify-center mb-4">
-                <a href="https://github.com/Kushal129" class="mx-2 footer-icon">
-                    <img src="img/logo/git.png" alt="GitHub" class="w-6 h-auto logo-green">
-                </a>
-                <a href="https://www.linkedin.com/in/kushal-pipaliya" target="_blank" class="mx-2 footer-icon">
-                    <img src="img/logo/linkd.png" alt="LinkedIn" class="w-6 h-auto logo-green">
-                </a>
-                <a href=https://www.instagram.com/_kushal_pipaliya/"" target="_blank" class="mx-2 footer-icon">
-                    <img src="img/logo/insta.png" alt="Instagram" class="w-6 h-auto logo-green">
-                </a>
-                <a href="https://www.facebook.com/kushal.pipaliya.12?mibextid=JRoKGi" target="_blank" class="mx-2 footer-icon">
-                    <img src="img/logo/fb.png" alt="Facebook" class="w-6 h-auto logo-green">
-                </a>
-                <a href="https://twitter.com/PipaliyaKu78237" target="_blank" class="mx-2 footer-icon">
-                    <img src="img/logo/twt.png" alt="Twitter" class="w-6 h-auto logo-green">
-                </a>
-                <a href="mailto:21bmiit129@email.com" class="mx-2 footer-icon">
-                    <img src="img/logo/email.png" alt="Email" class="w-6 h-auto logo-green">
-                </a>
->>>>>>> ac4dfd4fe4971402a9f10953e114a0f9b0643e4e
+                </div>
             </div>
         </div>
 
@@ -207,21 +205,20 @@
             </div>
         </div>
     </div>
-    <hr>
 
+    <hr>
     <!-- Project Details -->
     <div class="flex items-center justify-center h-screen bg-black">
-        <!-- Left Partition -->
         <div class="text-white text-center pr-4">
             <h2 class="text-3xl font-bold mb-4">My Work</h2>
             <div class="grid grid-cols-2 gap-4 md:grid-cols-4 lg:grid-cols-6">
+
                 <div class="mx-auto transform transition-transform hover:scale-110 fade-in">
                     <img class="w-16 h-16 mb-2 rounded-full shadow-md"
                         src="https://cdn.worldvectorlogo.com/logos/c--4.svg" alt="C#">
                     <p class="text-xs">C#</p>
                 </div>
 
-                <!-- Add hover and fade-in classes to other items -->
                 <div class="mx-auto transform transition-transform hover:scale-110 fade-in">
                     <img class="w-16 h-16 mb-2 rounded-full shadow-md" src="img/logo/hcj.png" alt="HTML/CSS/JS">
                     <p class="text-xs">HTML/CSS/JS</p>
@@ -251,38 +248,38 @@
         </div>
     </div>
     <div class="relative">
-        <footer class="bg-black p-4 mt-8">
-            <div class="mx-auto text-center p-5 text-black z-10 relative">
-                <div class="flex items-center justify-center mb-4">
-                    <a href="#web-dev-section" class="mx-2 footer-icon">
-                        <img src="img/logo/git.png" alt="GitHub" class="w-6 h-auto logo-green">
-                    </a>
-                    <a href="https://www.linkedin.com/in/kushal-pipaliya" target="_blank" class="mx-2 footer-icon">
-                        <img src="img/logo/linkd.png" alt="LinkedIn" class="w-6 h-auto logo-green">
-                    </a>
-                    <a href=https://www.instagram.com/_kushal_pipaliya/"" target="_blank" class="mx-2 footer-icon">
-                        <img src="img/logo/insta.png" alt="Instagram" class="w-6 h-auto logo-green">
-                    </a>
-                    <a href="https://www.facebook.com/kushal.pipaliya.12?mibextid=JRoKGi" target="_blank"
-                        class="mx-2 footer-icon">
-                        <img src="img/logo/fb.png" alt="Facebook" class="w-6 h-auto logo-green">
-                    </a>
-                    <a href="https://twitter.com/PipaliyaKu78237" target="_blank" class="mx-2 footer-icon">
-                        <img src="img/logo/twt.png" alt="Twitter" class="w-6 h-auto logo-green">
-                    </a>
-                    <a href="mailto:21bmiit129@email.com" class="mx-2 footer-icon">
-                        <img src="img/logo/email.png" alt="Email" class="w-6 h-auto logo-green">
-                    </a>
-                </div>
-                <p class="text-sm text-[#049309]">&copy; Copyright by Kushal Pipaliya <span id="currentYear"></span> All
-                    rights reserved.
-                </p>
+    <footer class="bg-black p-4 mt-8">
+        <div class="mx-auto text-center p-5 text-black z-10 relative">
+            <div class="flex items-center justify-center mb-4">
+                <a href="#web-dev-section" class="mx-2 footer-icon">
+                    <img src="img/logo/git.png" alt="GitHub" class="w-6 h-auto logo-green">
+                </a>
+                <a href="https://www.linkedin.com/in/kushal-pipaliya" target="_blank" class="mx-2 footer-icon">
+                    <img src="img/logo/linkd.png" alt="LinkedIn" class="w-6 h-auto logo-green">
+                </a>
+                <a href=https://www.instagram.com/_kushal_pipaliya/"" target="_blank" class="mx-2 footer-icon">
+                    <img src="img/logo/insta.png" alt="Instagram" class="w-6 h-auto logo-green">
+                </a>
+                <a href="https://www.facebook.com/kushal.pipaliya.12?mibextid=JRoKGi" target="_blank"
+                    class="mx-2 footer-icon">
+                    <img src="img/logo/fb.png" alt="Facebook" class="w-6 h-auto logo-green">
+                </a>
+                <a href="https://twitter.com/PipaliyaKu78237" target="_blank" class="mx-2 footer-icon">
+                    <img src="img/logo/twt.png" alt="Twitter" class="w-6 h-auto logo-green">
+                </a>
+                <a href="mailto:21bmiit129@email.com" class="mx-2 footer-icon">
+                    <img src="img/logo/email.png" alt="Email" class="w-6 h-auto logo-green">
+                </a>
             </div>
-            <div
-                class="before:absolute before:inset-x-0 before:top-0 before:h-6 before:bg-gradient-to-t before:from-green-500 before:to-transparent before:opacity-30">
-            </div>
-        </footer>
-    </div>
+            <p class="text-sm text-[#049309]">&copy; Copyright by Kushal Pipaliya <span id="currentYear"></span> All
+                rights
+                reserved.
+            </p>
+        </div>
+        <div
+            class="before:absolute before:inset-x-0 before:top-0 before:h-6 before:bg-gradient-to-t before:from-green-500 before:to-transparent before:opacity-30">
+        </div>
+    </footer>
 
     <script>
         document.getElementById("currentYear").innerText = new Date().getFullYear();
@@ -326,9 +323,6 @@
         style.innerHTML = '.typed-cursor { display: none; }';
         document.head.appendChild(style);
     </script>
-</body>
-
-
 </body>
 
 </html>
