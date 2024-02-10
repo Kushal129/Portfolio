@@ -87,13 +87,8 @@ body::-webkit-scrollbar-thumb:hover {
     opacity: 1;
 }
 
-.laptop-container {
-    background-color: #a1ff7878;
-    overflow: hidden;
-}
-
 /* loding  */
-#loader {
+/* #loader {
     background: rgba(25, 25, 25, 0.607);
     border: 8px solid #1c7202;
     border-radius: 50%;
@@ -117,4 +112,127 @@ body::-webkit-scrollbar-thumb:hover {
     100% {
         transform: rotate(360deg);
     }
+} */
+
+#loader {
+    color: #1c7202;
+    font-size: 50px;
+    text-align: center;
+    padding: 50px;
+  }
+
+  .center {
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  @keyframes changeContent {
+    0% { content: "/"; }
+    25% { content: "-"; }
+    50% { content: "\\"; }
+    75% { content: "*"; }
+    100% { content: "/"; }
+  }
+
+  #loader::before {
+    content: "/";
+    animation: changeContent 2s linear infinite;
+    display: inline-block;
+  }
+
+ /* popover */
+ .popover-default {
+    width: 10rem; 
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  .popover-default {
+    border: #035e03;
+    animation: fadeIn 0.3s ease-out;
+  }
+
+/* NavBar cSS  */
+
+.nav-link {
+    position: relative;
+    text-decoration: none !important;
+    color: #237d07;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #049309;
+}
+
+.nav-link::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 8px 0px 12px 0px;
+    background: linear-gradient(90deg, #2e851333, #359a165f);
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    -webkit-border-radius: 8px 0px 12px 0px;
+    -moz-border-radius: 8px 0px 12px 0px;
+    -ms-border-radius: 8px 0px 12px 0px;
+    -o-border-radius: 8px 0px 12px 0px;
+}
+
+.nav-link:hover::before {
+    opacity: 1;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #2d8513; 
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.nav-link:hover::after {
+    transform: scaleX(1);
+}
+
+.nav-link.active::after {
+    transform: scaleX(1);
+}
+
+.active-underline {
+    position: absolute;
+    height: 2px;
+    bottom: 0;
+    background-color: #2d8513;
+    transition: transform 0.3s ease, width 0.3s ease;
+}
+
+.nav-link.home-active::before {
+    opacity: 1;
+}
+
+.nav {
+    background: rgba(13, 13, 13, 0.034); 
+    backdrop-filter: blur(0px); 
+}
+
+.nav.scrolled {
+    
+    background: rgba(4, 4, 4, 0.268);
+    backdrop-filter: blur(20px);
+    transition: background 0.5s ease-in-out;
 }
