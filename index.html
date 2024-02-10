@@ -24,52 +24,22 @@
 </head>
 
 <body class="bg-black">
-    
     <div id="loader" class="center"></div>
     <!-- navbar  -->
+
     <nav class="nav fixed w-full z-10 transition duration-500 ease-in-out bg-red navbar" id="navbar">
         <div class="container mx-auto flex items-center justify-between p-2">
             <a href="#" class="font-bold text-xl text-[#237d07] hover:text-green-600">KH.Pipaliya</a>
-    
-            <!-- Mobile Menu Button -->
             <div class="md:hidden">
-                <button id="mobile-menu-btn" class="text-[#237d07] hover:text-green-600 focus:outline-none">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                <button id="mobile-menu-toggle" class="text-[#237d07] focus:outline-none">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M4 6h16M4 12h16m-7 6h7"></path>
                     </svg>
                 </button>
             </div>
-    
-            <!-- Navigation Links -->
-            <div class="hidden md:flex space-x-4">
-                <a href="#home-section" class="nav-link">Home<span class="active-underline"></span></a>
-                <a href="#resume-section" class="nav-link">Resume<span class="active-underline"></span></a>
-                <a href="#about-section" class="nav-link">About<span class="active-underline"></span></a>
-                <a href="#mywork-section" class="nav-link">Work<span class="active-underline"></span></a>
-                <a href="#contact-section" class="nav-link">Contact<span class="active-underline"></span></a>
-            </div>
-        </div>
-    
-        <!-- Mobile Menu (hidden by default) -->
-        <div id="mobile-menu" class="md:hidden fixed inset-0 opacity-0 z-50 transition-opacity duration-500 ease-in-out">
-            <div class="bg-black bg-opacity-70 blur w-full h-full fixed"></div> <!-- Dark and blurry background overlay -->
-    
-            <div class="flex items-center justify-end p-4">
-                <!-- Close Button -->
-                <button id="close-mobile-menu-btn"
-                    class="text-[#237d07] hover:text-green-600 focus:outline-none">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M6 18L18 6M6 6l12 12"></path>
-                    </svg>
-                </button>
-            </div>
-    
-            <!-- Mobile Menu Links -->
-            <div class="flex flex-col items-center bg-red p-8 rounded-md w-64"> <!-- Adjust the width as needed -->
+            <div class="hidden md:flex flex-col md:flex-row md:items-center md:justify-end md:space-x-4" id="nav-links">
                 <a href="#home-section" class="nav-link">Home<span class="active-underline"></span></a>
                 <a href="#resume-section" class="nav-link">Resume<span class="active-underline"></span></a>
                 <a href="#about-section" class="nav-link">About<span class="active-underline"></span></a>
@@ -78,26 +48,26 @@
             </div>
         </div>
     </nav>
-    
 
     <!-- Main Content -->
-
     <section class="container mx-auto p-8 section" id="home-section">
         <div class="flex flex-wrap items-center justify-center">
             <div class="w-full md:w-1/2 lg:w-1/2 p-4">
                 <div class="flex flex-col items-start justify-center h-full ftco-animate fadeInUp ftco-animated">
-                    <span class="text-[#237d07] text-3xl">Hey!</span>
+                    <span class="text-[#237d07] text-3xl mt-3">Hey!</span>
                     <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white my-4">I'm <span
                             class="text-[#237d07]">KUSHAL PIPALIYA</span></h1>
                     <p class="text-lg mb-4 text-gray-300">Welcome to my portfolio. Let's work something amazing
                         together.</p>
-                    <div class="flex space-x-4">
+                    <div class="flex flex-col sm:flex-row text-center space-y-4 sm:space-y-0 sm:space-x-4">
                         <a href="#contact-section"
-                            class="bg-[#237d07] hover:bg-green-800 text-white font-bold py-3 px-8 rounded-full transition duration-300 ease-in-out">Get
-                            in Touch</a>
+                            class="block md:inline-block bg-[#237d07] hover:bg-green-800 text-white font-bold py-3 px-8 rounded-full transition duration-300 ease-in-out">
+                            Get in Touch
+                        </a>
                         <a href="#mywork-section"
-                            class="bg-transparent text-green-600 border border-green-600 py-3 px-6 rounded-full transition duration-300 ease-in-out hover:bg-green-600 hover:text-green-800">My
-                            Works</a>
+                            class="block md:inline-block bg-transparent text-green-600 border border-green-600 py-3 px-6 rounded-full transition duration-300 ease-in-out hover:text-green-800 hover:bg-[#237d07]">
+                            My Works
+                        </a>
                     </div>
                 </div>
             </div>
@@ -107,6 +77,8 @@
         </div>
         <hr class="fade-in">
     </section>
+
+
 
     <section class="flex justify-center mt-5 mb-8 section" id="resume-section">
         <div class="max-w-2xl w-full mx-auto">
@@ -156,7 +128,7 @@
     <div class="text-center mt-5 pb-5 section" id="about-section">
         <h1 class="text-5xl font-bold mb-2">About</h1>
     </div>
-    <section class="container mx-auto p-8 flex flex-col md:flex-row" >
+    <section class="container mx-auto p-8 flex flex-col md:flex-row">
         <div class="flex-1 mb-8 md:mr-6 fade-in">
             <div class="mb-4">
                 <h1 class="text-3xl font-bold mb-2">$ dir /a</h1>

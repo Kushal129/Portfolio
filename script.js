@@ -1,6 +1,7 @@
-
+// Set the current year in an element with id 'currentYear'
 document.getElementById("currentYear").innerText = new Date().getFullYear();
 
+// Fade in elements when they become visible during scroll
 document.addEventListener('scroll', function () {
     var fadeIns = document.querySelectorAll('.fade-in');
 
@@ -17,41 +18,21 @@ function isElementVisible(el) {
     return !(rect.bottom < 0 || rect.top - windowHeight >= 0);
 }
 
-
-
-// var typed = new Typed('#element', {
-//     strings: ['Kushal Pipaliya'],
-//     typeSpeed: 50,
-//     lifeLike: true,
-//     startDelay: 500,
-//     cursor: true,
-// });
-// var typed = new Typed('#element-p', {
-//     strings: ['Web Developer.', 'Ethical Hacker.', 'Web Designer', 'Web Developer.', 'Ethical Hacker.'],
-//     typeSpeed: 60,
-//     lifeLike: true,
-//     startDelay: 500,
-//     cursor: true,
-// });
-// var style = document.createElement('style');
-// style.innerHTML = '.typed-cursor { display: none; }';
-// document.head.appendChild(style);
-
-
-// loader 
-
+// Loader - show loader until the document is fully loaded
 document.onreadystatechange = function () {
+    var body = document.querySelector("body");
+    var loader = document.querySelector("#loader");
+
     if (document.readyState !== "complete") {
-      document.querySelector("body").style.visibility = "hidden";
-      document.querySelector("#loader").style.visibility = "visible";
+        body.style.visibility = "hidden";
+        loader.style.visibility = "visible";
     } else {
-      document.querySelector("#loader").style.display = "none";
-      document.querySelector("body").style.visibility = "visible";
+        loader.style.display = "none";
+        body.style.visibility = "visible";
     }
-  };
+};
 
-
-//   navabr 
+// Navbar - update active link and apply styles on scroll
 document.addEventListener("DOMContentLoaded", function () {
     const navLinks = document.querySelectorAll(".nav-link");
 
@@ -67,19 +48,17 @@ document.addEventListener("DOMContentLoaded", function () {
                 scrollPosition >= targetSection.offsetTop &&
                 scrollPosition < targetSection.offsetTop + targetSection.offsetHeight
             ) {
-                // Remove 'active' class from all links
                 navLinks.forEach((navLink) => navLink.classList.remove("active"));
-
-                // Add 'active' class to the current link
                 link.classList.add("active");
             }
         });
     }
 
     window.addEventListener("scroll", updateActiveLink);
-    updateActiveLink(); // Initial update on page load
+    updateActiveLink();
 });
 
+// Change navbar style on scroll
 document.addEventListener("DOMContentLoaded", function () {
     var navbar = document.getElementById("navbar");
 
@@ -92,27 +71,15 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-
+// Animate form on button click
 function animateForm() {
     $('.contact-form input, .contact-form textarea').addClass('animate__animated animate__shakeX');
 
-    setTimeout(function() {
+    setTimeout(function () {
         $('.contact-form input, .contact-form textarea').removeClass('animate__animated animate__shakeX');
     }, 1000);
 }
 
-
-const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-const closeMobileMenuBtn = document.getElementById('close-mobile-menu-btn');
-const mobileMenu = document.getElementById('mobile-menu');
-const navBar = document.getElementById('navbar');
-
-mobileMenuBtn.addEventListener('click', () => {
-    mobileMenu.style.opacity = '1';
-    mobileMenu.style.pointerEvents = 'auto';
-});
-
-closeMobileMenuBtn.addEventListener('click', () => {
-    mobileMenu.style.opacity = '0';
-    mobileMenu.style.pointerEvents = 'none';
+document.getElementById('mobile-menu-toggle').addEventListener('click', function () {
+    document.getElementById('nav-links').classList.toggle('hidden');
 });
