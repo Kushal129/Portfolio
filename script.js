@@ -89,5 +89,5 @@ function handleFormSubmission(event) {
     document.getElementById("name").value = "";
     document.getElementById("email").value = "";
     document.getElementById("message").value = "";
-    return false;
+    return true;
 }
