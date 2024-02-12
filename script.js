@@ -85,6 +85,9 @@ document.getElementById('mobile-menu-toggle').addEventListener('click', function
 });
 
 function handleFormSubmission(event) {
-    console.log("Form submitted successfully");
-    return true;  
+    
+    document.getElementById("name").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("message").value = "";
+    return false;
 }
