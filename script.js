@@ -84,3 +84,12 @@ document.getElementById('mobile-menu-toggle').addEventListener('click', function
     document.getElementById('nav-links').classList.toggle('hidden');
 });
 
+function convertToUpperCase() {
+    var nameInput = document.getElementById("name");
+    var emailInput = document.getElementById("email");
+    var messageInput =  document.getElementById("message");
+   
+    nameInput.value = nameInput.value.toUpperCase();
+    emailInput.value = emailInput.value.toUpperCase();
+    messageInput.value  = messageInput.value.toUpperCase();
+}
