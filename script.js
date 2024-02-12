@@ -84,10 +84,3 @@ document.getElementById('mobile-menu-toggle').addEventListener('click', function
     document.getElementById('nav-links').classList.toggle('hidden');
 });
 
-function handleFormSubmission(event) {
-    
-    document.getElementById("name").value = "";
-    document.getElementById("email").value = "";
-    document.getElementById("message").value = "";
-    return true;
-}
