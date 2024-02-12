@@ -83,3 +83,9 @@ function animateForm() {
 document.getElementById('mobile-menu-toggle').addEventListener('click', function () {
     document.getElementById('nav-links').classList.toggle('hidden');
 });
+
+function handleFormSubmission(event) {
+    // Add any additional handling/logic here if needed
+    console.log("Form submitted successfully");
+    return true;  // Returning true allows the form to submit
+}
