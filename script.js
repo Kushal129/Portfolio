@@ -85,7 +85,6 @@ document.getElementById('mobile-menu-toggle').addEventListener('click', function
 });
 
 function handleFormSubmission(event) {
-    // Add any additional handling/logic here if needed
     console.log("Form submitted successfully");
-    return true;  // Returning true allows the form to submit
+    return true;  
 }
