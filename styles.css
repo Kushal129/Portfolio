@@ -255,7 +255,11 @@ body::-webkit-scrollbar-thumb:hover {
     0% {
       opacity: 0;
       transform: translateY(100%);
-    }
+      -webkit-transform: translateY(100%);
+      -moz-transform: translateY(100%);
+      -ms-transform: translateY(100%);
+      -o-transform: translateY(100%);
+}
 
     40% {
       opacity: 0.7;

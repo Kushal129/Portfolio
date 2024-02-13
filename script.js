@@ -87,42 +87,5 @@ document.getElementById('mobile-menu-toggle').addEventListener('click', function
 
 
 
-function showToaster(str) {
-    var toaster = document.getElementById('toaster');
-    var message = document.getElementById('toast-message');
 
-    message.innerText = str || "Success! Your message has been sent.";
-
-    toaster.classList.add('show');
-    setTimeout(function () {
-        toaster.classList.remove('show');
-    }, 4000);
-}
-
-
-
-// function convertToUpperCase(e) 
-// {
-
-//     e.preventDefault()
-//     var nameInput = document.getElementById("name");
-//     var emailInput = document.getElementById("email");
-//     const form = document.forms['contact-form']
-//     nameInput.value = nameInput.value.toUpperCase();
-//     emailInput.value = emailInput.value.toUpperCase();
-
-
-//     const formspreeURL = 'https://formspree.io/f/xnqedqen';
-//     fetch(formspreeURL, {
-//         method: 'POST', body: new FormData(form), headers: {
-//             'Accept': 'application/json'
-//         }
-//     })
-//         .then(response => {
-//             document.forms['contact-form'].reset();
-//             showToaster("Thanks for Contacting us..! We Will Contact You Soon..!")
-//         })
-//         .catch(error => console.error('Error!', error.message))
-
-// }
 
