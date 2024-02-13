@@ -303,7 +303,8 @@
             <div class="container mx-auto bg-black mt-10 p-4">
                 <div class="flex flex-wrap -mx-4">
                     <div class="w-full md:w-2/3 px-4 mb-8">
-                        <form action="#" method="post"  class="bg-black p-8 rounded shadow-md contact-form" id="contact-form" name="contact-form" onsubmit="convertToUpperCase()">
+                        <form id="my-form" action="https://formspree.io/f/xnqedqen" method="POST"
+                            class="bg-black p-8 rounded shadow-md" onsubmit="convertToUpperCase()">
                             <div class="mb-4">
                                 <label for="name" class="block text-1xl font-bold mb-2">Your Name:</label>
                                 <input type="text" id="name" name="name" autocomplete="off" placeholder="KH....."
@@ -325,19 +326,27 @@
                             </div>
 
                             <div class="mb-4">
-                                <button type="submit" class="bg-[#237d07] text-white py-2 px-4 rounded hover:bg-green-800">Send Message</button>
+                                <button type="submit"
+                                    class="bg-[#237d07] text-white py-2 px-4 rounded hover:bg-green-800">Send
+                                    Message</button>
                             </div>
                         </form>
                     </div>
                     <div class="w-full md:w-1/3 px-4">
                         <div class="bg-black p-8 rounded shadow-md">
                             <h3 class="text-2xl font-semibold mb-4">KUSHAL PIPALIYA</h3>
-                            <p class="text-1xl mb-2">Address: <a class="text-gray-500 hover:text-white focus:text-[#237d07]" href="https://maps.app.goo.gl/sKMHbJfC7rdbQHNU7">Katargam, Surat, Gujarat, IN</a></p>
-                            <p class="text-1xl mb-2">Phone: <a href="tel:+919574476496" class="text-gray-500 hover:text-white focus:text-[#237d07]">+91 9574476496</a></p>
-                            <p class="mb-2">Email: <a href="mailto:kushalhpipaliya01@gmail.com" class="text-gray-500 hover:text-white focus:text-[#237d07]">kushalhpipaliya01@gmail.com</a></p>
+                            <p class="text-1xl mb-2">Address: <a
+                                    class="text-gray-500 hover:text-white focus:text-[#237d07]"
+                                    href="https://maps.app.goo.gl/sKMHbJfC7rdbQHNU7">Katargam, Surat, Gujarat, IN</a>
+                            </p>
+                            <p class="text-1xl mb-2">Phone: <a href="tel:+919574476496"
+                                    class="text-gray-500 hover:text-white focus:text-[#237d07]">+91 9574476496</a></p>
+                            <p class="mb-2">Email: <a href="mailto:kushalhpipaliya01@gmail.com"
+                                    class="text-gray-500 hover:text-white focus:text-[#237d07]">kushalhpipaliya01@gmail.com</a>
+                            </p>
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
@@ -378,11 +387,36 @@
         </section>
     </div>
 
-	<div id="toaster" class="toaster">
-		<span id="message" class="message"></span>
-	</div>
+    <div id="toaster" class="toaster">
+        <span id="toast-message" class="message"></span>
+    </div>
 
     <script src="script.js"></script>
 </body>
+<script>
+    var form = document.getElementById("my-form");
+
+    async function handleSubmit(event) {
+        event.preventDefault();
+        var status = document.getElementById("my-form-status");
+        var data = new FormData(event.target);
+        fetch(event.target.action, {
+            method: form.method,
+            body: data,
+            headers: {
+                'Accept': 'application/json'
+            }
+        }).then(response => {
+            if (response.ok) {
+                // status.innerHTML = "Thanks for your submission!";
+                showToaster("Thanks for Contacting us..! We Will Contact You Soon..!")
+                form.reset()
+            }
+        }).catch(error => {
+            status.innerHTML = "Oops! There was a problem submitting your form"
+        });
+    }
+    form.addEventListener("submit", handleSubmit)
+</script>
 
 </html>

@@ -237,27 +237,38 @@ body::-webkit-scrollbar-thumb:hover {
     transition: background 0.5s ease-in-out;
 }
 
-
 .toaster {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #4CAF50;
+    background-color: #237d07;
     color: #fff;
     padding: 10px 20px;
     border-radius: 5px;
     opacity: 0;
     transform: translateY(100%);
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-    animation: slideUp 0.5s ease-in-out;
+    animation: fadeInBounce 0.8s ease-out;
   }
 
-  @keyframes slideUp {
+  @keyframes fadeInBounce {
     0% {
+      opacity: 0;
       transform: translateY(100%);
     }
 
+    40% {
+      opacity: 0.7;
+      transform: translateY(-20px);
+    }
+
+    80% {
+      opacity: 1;
+      transform: translateY(-10px);
+    }
+
     100% {
+      opacity: 1;
       transform: translateY(0);
     }
   }
