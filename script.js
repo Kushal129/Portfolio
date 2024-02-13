@@ -101,7 +101,8 @@ function showToaster(str) {
 
 
 
-function convertToUpperCase() {
+function convertToUpperCase(e) {
+    e.preventDefault()
     var nameInput = document.getElementById("name");
     var emailInput = document.getElementById("email");
     const form = document.forms['contact-form']
