@@ -407,7 +407,7 @@
         toaster.classList.remove('hidden');
         setTimeout(function () {
             toaster.classList.add('hidden');
-        }, 4000);
+        }, 5000);
     }
 
     async function handleSubmit(event) {
@@ -432,9 +432,9 @@
 
     form.addEventListener("submit", handleSubmit);
 
-    submitButton.addEventListener("click", function () {
-        showToaster("Please wait..."); // Display toaster when the button is clicked
-    });
+    // submitButton.addEventListener("click", function () {
+    //     showToaster("Please wait..."); // Display toaster when the button is clicked
+    // });
 </script>
 
 </html>
