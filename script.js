@@ -1,7 +1,6 @@
-// Set the current year in an element with id 'currentYear'
+
 document.getElementById("currentYear").innerText = new Date().getFullYear();
 
-// Fade in elements when they become visible during scroll
 document.addEventListener('scroll', function () {
     var fadeIns = document.querySelectorAll('.fade-in');
 
@@ -18,7 +17,7 @@ function isElementVisible(el) {
     return !(rect.bottom < 0 || rect.top - windowHeight >= 0);
 }
 
-// Loader - show loader until the document is fully loaded
+
 document.onreadystatechange = function () {
     var body = document.querySelector("body");
     var loader = document.querySelector("#loader");
@@ -32,7 +31,7 @@ document.onreadystatechange = function () {
     }
 };
 
-// Navbar - update active link and apply styles on scroll
+
 document.addEventListener("DOMContentLoaded", function () {
     const navLinks = document.querySelectorAll(".nav-link");
 
@@ -58,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
     updateActiveLink();
 });
 
-// Change navbar style on scroll
+
 document.addEventListener("DOMContentLoaded", function () {
     var navbar = document.getElementById("navbar");
 
@@ -71,7 +70,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-// Animate form on button click
+
 function animateForm() {
     $('.contact-form input, .contact-form textarea').addClass('animate__animated animate__shakeX');
 
