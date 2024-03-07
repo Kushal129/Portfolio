@@ -82,9 +82,3 @@ function animateForm() {
 document.getElementById('mobile-menu-toggle').addEventListener('click', function () {
     document.getElementById('nav-links').classList.toggle('hidden');
 });
-
-
-
-
-
-
