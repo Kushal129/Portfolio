@@ -127,7 +127,6 @@
         </div>
     </section>
     <hr class="w-4/5 mx-auto fade-in mb-5">
-
     <div class="text-center mt-5 pb-5 section" id="about-section">
         <h1 class="text-5xl font-bold mb-2">About</h1>
         <section class="container mx-auto p-8 flex flex-col md:flex-row">
@@ -146,7 +145,6 @@
                         and a genuine curiosity to understand the intricacies of web development.
                         Join me as I embark on this exciting adventure in the realm of coding!
                     </p>
-
                 </div>
                 <div>
                     <div class="border border-green-700 p-2 rounded-md bg-zinc-950 fade-in">
@@ -275,7 +273,6 @@
                             <h3 class="text-md md:text-lg font-bold mb-1">Java Projects</h3>
                         </div>
                     </div>
-
                     <div
                         class="bg-black rounded-lg overflow-hidden shadow-md transition-transform transform hover:scale-105">
                         <a href="https://www.github.com/Kushal129/" class="text-xs text-gray-500 hover:text-gray-300"><img class="w-full h-32 md:h-16 object-center"
@@ -393,8 +390,9 @@
     var toaster = document.getElementById('toaster');
     var message = document.getElementById('toast-message');
     var form = document.getElementById("my-form");
-    // var submitButton = form.querySelector("button[type='submit']");
+    var submitButton = form.querySelector("button[type='submit']");
     toaster.classList.add('hidden');
+
     function showToaster(str) {
         message.innerText = str || "Success! Your message has been sent.";
         toaster.classList.remove('hidden');
@@ -407,26 +405,35 @@
         event.preventDefault();
         var status = document.getElementById("my-form-status");
         var data = new FormData(event.target);
-        fetch(event.target.action, {
-            method: form.method,
-            body: data,
-            headers: {
-                'Accept': 'application/json'
-            }
-        }).then(response => {
+        
+        submitButton.setAttribute("disabled", true); 
+
+        try {
+            var response = await fetch(event.target.action, {
+                method: form.method,
+                body: data,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+
             if (response.ok) {
                 showToaster("Thanks for Contacting us..! We Will Contact You Soon..!");
                 form.reset();
             }
-        }).catch(error => {
+        } catch (error) {
             status.innerHTML = "Oops! There was a problem submitting your form";
-        });
+        } finally {
+            submitButton.removeAttribute("disabled"); 
+        }
     }
+
     form.addEventListener("submit", handleSubmit);
 
     submitButton.addEventListener("click", function () {
-        showToaster("Please wait..."); // Display toaster when the button is clicked
+        showToaster("Please wait...");
     });
 </script>
+
 
 </html>
