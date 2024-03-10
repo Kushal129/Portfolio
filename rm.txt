@@ -16,7 +16,7 @@
    <!-- End of SEO Meta Tags -->
 
    <!-- External Scripts and Styles -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
    <script src="https://unpkg.com/scrollreveal@4/dist/scrollreveal.min.js"></script>
    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
@@ -65,7 +65,7 @@
                     <p class="text-lg mb-4 text-gray-400">Welcome to my portfolio. Let's work something amazing
                         together...!</p>
                     <div class="flex flex-col sm:flex-row text-center space-y-4 sm:space-y-0 sm:space-x-4">
-                        <a href="#contact-section"
+                        <a href="#home-section"
                             class="block bg-[#237d07] text-white font-bold py-3 px-8 rounded-full transition duration-300 ease-in-out hover:bg-[#299f04]">
                             Get in Touch
                         </a>
@@ -233,55 +233,61 @@
                 <div class="grid grid-cols-1 mt-5 text-gray-400 md:grid-cols-2 lg:grid-cols-3 gap-4 font-sans">
                     <div
                         class="bg-black rounded-lg overflow-hidden shadow-md transition-transform transform hover:scale-105">
-                        <a href="https://www.github.com/Kushal129/" class="text-xs text-gray-500 hover:text-gray-300"></a><img class="w-full h-32 md:h-16 object-center"
-                            src="https://www.svgrepo.com/show/261945/web-development.svg" alt="HTML/CSS/JS"></a>
+                        <img class="w-full h-32 md:h-16 object-center"
+                            src="https://www.svgrepo.com/show/261945/web-development.svg" alt="HTML/CSS/JS">
                         <div class="p-2">
                             <h3 class="text-md md:text-lg font-bold mb-1">HTML/CSS/JS Project</h3>
+                            <a href="https://www.github.com/Kushal129/" class="text-xs text-gray-500 hover:text-gray-300">View My GitHub...!</a>
                         </div>
                     </div>
 
                     <div
                         class="bg-black rounded-lg overflow-hidden shadow-md transition-transform transform hover:scale-105">
-                        <a href="https://www.github.com/Kushal129/" class="text-xs text-gray-500 hover:text-gray-300"></a><img class="w-full h-32 md:h-16 object-center"
-                            src="https://cdn.worldvectorlogo.com/logos/c--4.svg" alt="C#"></a>
+                        <img class="w-full h-32 md:h-16 object-center"
+                            src="https://cdn.worldvectorlogo.com/logos/c--4.svg" alt="C#">
                         <div class="p-2">
                             <h3 class="text-md md:text-lg font-bold mb-1">C# Project</h3>
+                            <a href="https://www.github.com/Kushal129/" class="text-xs text-gray-500 hover:text-gray-300">View My GitHub...!</a>
                         </div>
                     </div>
 
                     <div
                         class="bg-black rounded-lg overflow-hidden shadow-md transition-transform transform hover:scale-105">
-                        <a href="https://www.github.com/Kushal129/" class="text-xs text-gray-500 hover:text-gray-300"></a><img class="w-full h-32 md:h-16 object-center" src="https://www.svgrepo.com/show/452088/php.svg"
-                            alt="PHP"></a>
+                        <img class="w-full h-32 md:h-16 object-center" src="https://www.svgrepo.com/show/452088/php.svg"
+                            alt="PHP">
                         <div class="p-2">
                             <h3 class="text-md md:text-lg font-bold mb-1">PHP Project</h3>
+                            <a href="https://www.github.com/Kushal129/" class="text-xs text-gray-500 hover:text-gray-300">View My GitHub...!</a>
                         </div>
                     </div>
 
                     <div
                         class="bg-black rounded-lg overflow-hidden shadow-md transition-transform transform hover:scale-105">
-                        <a href="https://www.github.com/Kushal129/" class="text-xs text-gray-500 hover:text-gray-300"></a><img class="w-full h-32 md:h-16 object-center"
-                            src="https://upload.wikimedia.org/wikipedia/commons/e/ee/.NET_Core_Logo.svg" alt=".Net"></a>
+                        <img class="w-full h-32 md:h-16 object-center"
+                            src="https://upload.wikimedia.org/wikipedia/commons/e/ee/.NET_Core_Logo.svg" alt=".Net">
                         <div class="p-2">
-                            <h3 class="text-md md:text-lg font-bold mb-1">.Net Projects</h3>
+                            <h3 class="text-md md:text-lg font-bold mb-1">.Net Project</h3>
+                            <a href="https://www.github.com/Kushal129/" class="text-xs text-gray-500 hover:text-gray-300">View My GitHub...!</a>
                         </div>
                     </div>
 
                     <div
                         class="bg-black rounded-lg overflow-hidden shadow-md transition-transform transform hover:scale-105">
-                        <a href="https://www.github.com/Kushal129/" class="text-xs text-gray-500 hover:text-gray-300"> <img class="w-full h-32 md:h-16 object-center"
-                            src="https://cdn.worldvectorlogo.com/logos/java-4.svg" alt="Java"></a>
+                        <img class="w-full h-32 md:h-16 object-center"
+                            src="https://cdn.worldvectorlogo.com/logos/java-4.svg" alt="Java">
                         <div class="p-2">
-                            <h3 class="text-md md:text-lg font-bold mb-1">Java Projects</h3>
+                            <h3 class="text-md md:text-lg font-bold mb-1">Java Project</h3>
+                            <a href="https://www.github.com/Kushal129/" class="text-xs text-gray-500 hover:text-gray-300">View My GitHub...!</a>
                         </div>
                     </div>
 
                     <div
                         class="bg-black rounded-lg overflow-hidden shadow-md transition-transform transform hover:scale-105">
-                        <a href="https://www.github.com/Kushal129/" class="text-xs text-gray-500 hover:text-gray-300"><img class="w-full h-32 md:h-16 object-center"
-                            src="https://www.svgrepo.com/show/452091/python.svg" alt="Python"></a>
+                        <img class="w-full h-32 md:h-16 object-center"
+                            src="https://www.svgrepo.com/show/452091/python.svg" alt="Python">
                         <div class="p-2">
-                            <h3 class="text-md md:text-lg font-bold mb-1">Python Projects</h3>
+                            <h3 class="text-md md:text-lg font-bold mb-1">Python Project</h3>
+                            <a href="https://www.github.com/Kushal129/" class="text-xs text-gray-500 hover:text-gray-300">View My GitHub...!</a>
                         </div>
                     </div>
                 </div>
@@ -289,7 +295,8 @@
         </div>
     </section>
     <section class="ftco-section contact-section ftco-no-pb bg-black text-[#237d07]" id="contact-section">
-        <div class="row justify-content-center mb-5 pb-3">
+        <div class="container">
+            <!-- <div class="row justify-content-center mb-5 pb-3">
                 <div class="col-md-7 heading-section text-center ftco-animate fadeInUp ftco-animated">
                     <h1 class="text-5xl">Contact</h1>
                     <p>Get in touch for collaboration, support, or any inquiries - let's bring your vision to life!</p>
@@ -303,21 +310,21 @@
                             <div class="mb-4">
                                 <label for="name" class="block text-1xl font-bold mb-2">Your Name:</label>
                                 <input type="text" id="name" name="name" autocomplete="off" placeholder="KH....."
-                                    class="w-full px-3 py-2 border-2 rounded shadow-md bg-black text-[#237d07] focus:outline-none focus:border-green-500 focus:ring-0" required>
+                                    class="w-full px-3 py-2 border-2 rounded shadow-md bg-black text-[#237d07] focus:outline-none focus:border-green-500 focus:ring-0">
                             </div>
 
                             <div class="mb-4">
                                 <label for="email" class="block text-1xl font-bold mb-2">Your
                                     Email:</label>
                                 <input type="email" id="email" name="email" placeholder="abc@example.com"
-                                    class="w-full px-3 py-2 border-2 rounded shadow-md bg-black text-[#237d07] focus:outline-none focus:border-green-500 focus:ring-0" required>
+                                    class="w-full px-3 py-2 border-2 rounded shadow-md bg-black text-[#237d07] focus:outline-none focus:border-green-500 focus:ring-0">
                             </div>
 
                             <div class="mb-4">
                                 <label for="message" class="block text-1xl font-bold mb-2">Your
                                     Message:</label>
                                 <textarea id="message" name="message" rows="4" placeholder="Write your message here..."
-                                    class="w-full px-3 py-2 border-2 rounded shadow-md bg-black text-[#237d07] focus:outline-none focus:border-green-500 focus:ring-0" required></textarea>
+                                    class="w-full px-3 py-2 border-2 rounded shadow-md bg-black text-[#237d07] focus:outline-none focus:border-green-500 focus:ring-0"></textarea>
                             </div>
 
                             <div class="mb-4">
@@ -342,15 +349,14 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        <!-- <div class="container">
+            </div> -->
             <div class="visme_d" data-title="portfolio" data-url="eprmwv11-portfolio" data-domain="forms"
                 data-full-page="false" data-min-height="500px" data-form-id="15538"></div>
-        </div> -->
+        </div>
     </section>
 
-    <section class="bg-black p-8 mt-8 section" id="footer-section">
     <div class="relative fade-in">
+        <section class="bg-black p-8 mt-8 section" id="contact-section">
             <div class="mx-auto text-center p-5 text-black z-10 relative">
                 <div class="flex items-center justify-center mb-4">
                     <a href="https://www.github.com/Kushal129" class="mx-2 footer-icon">
@@ -381,52 +387,52 @@
             <div
                 class="before:absolute before:inset-x-0 before:top-0 before:h-6 before:bg-gradient-to-t before:from-[#049309] before:to-transparent before:opacity-70 animate-pulse">
             </div>
-        </div>
-    </section>
-<div id="toaster" class="toaster">
-    <span id="toast-message" class="message"></span>
-</div>
+        </section>
+    </div>
+    <!-- <div id="toaster" class="toaster">
+        <span id="toast-message" class="message"></span>
+    </div> -->
     <script src="script.js"></script>
 </body>
 
 <script>
-    var toaster = document.getElementById('toaster');
-    var message = document.getElementById('toast-message');
-    var form = document.getElementById("my-form");
-    // var submitButton = form.querySelector("button[type='submit']");
-    toaster.classList.add('hidden');
-    function showToaster(str) {
-        message.innerText = str || "Success! Your message has been sent.";
-        toaster.classList.remove('hidden');
-        setTimeout(function () {
-            toaster.classList.add('hidden');
-        }, 8000);
-    }
+    // var toaster = document.getElementById('toaster');
+    // var message = document.getElementById('toast-message');
+    // var form = document.getElementById("my-form");
+    // // var submitButton = form.querySelector("button[type='submit']");
+    // toaster.classList.add('hidden');
+    // function showToaster(str) {
+    //     message.innerText = str || "Success! Your message has been sent.";
+    //     toaster.classList.remove('hidden');
+    //     setTimeout(function () {
+    //         toaster.classList.add('hidden');
+    //     }, 8000);
+    // }
 
-    async function handleSubmit(event) {
-        event.preventDefault();
-        var status = document.getElementById("my-form-status");
-        var data = new FormData(event.target);
-        fetch(event.target.action, {
-            method: form.method,
-            body: data,
-            headers: {
-                'Accept': 'application/json'
-            }
-        }).then(response => {
-            if (response.ok) {
-                showToaster("Thanks for Contacting us..! We Will Contact You Soon..!");
-                form.reset();
-            }
-        }).catch(error => {
-            status.innerHTML = "Oops! There was a problem submitting your form";
-        });
-    }
-    form.addEventListener("submit", handleSubmit);
+    // async function handleSubmit(event) {
+    //     event.preventDefault();
+    //     var status = document.getElementById("my-form-status");
+    //     var data = new FormData(event.target);
+    //     fetch(event.target.action, {
+    //         method: form.method,
+    //         body: data,
+    //         headers: {
+    //             'Accept': 'application/json'
+    //         }
+    //     }).then(response => {
+    //         if (response.ok) {
+    //             showToaster("Thanks for Contacting us..! We Will Contact You Soon..!");
+    //             form.reset();
+    //         }
+    //     }).catch(error => {
+    //         status.innerHTML = "Oops! There was a problem submitting your form";
+    //     });
+    // }
+    // form.addEventListener("submit", handleSubmit);
 
-    submitButton.addEventListener("click", function () {
-        showToaster("Please wait..."); // Display toaster when the button is clicked
-    });
+    // submitButton.addEventListener("click", function () {
+    //     showToaster("Please wait..."); // Display toaster when the button is clicked
+    // });
 </script>
 
 </html>
