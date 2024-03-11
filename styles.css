@@ -86,32 +86,6 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 
-/* loding  */
-/* #loader {
-    background: rgba(25, 25, 25, 0.607);
-    border: 8px solid #1c7202;
-    border-radius: 50%;
-    border-top: 12px solid #383838d6;
-    width: 70px;
-    height: 70px;
-    animation: spin 1s linear infinite;
-    -webkit-animation: spin 1s linear infinite;
-}
-
-.center {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-}
-
-@keyframes spin {
-    100% {
-        transform: rotate(360deg);
-    }
-} */
 
 #loader {
     color: #1c7202;
