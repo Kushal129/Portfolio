@@ -1,11 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<!--  created with sitemap generator https://octopus.do  -->
 
     <url>
-        <loc>https://kushalpipaliyaportfolio.netlify.app</loc>
+        <loc>https://kushalpipaliyaportfolio.netlify.app/</loc>
+        <lastmod>2024-03-24</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://kushalpipaliyaportfolio.netlify.app/#home-section</loc>
+        <lastmod>2024-03-24</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://kushalpipaliyaportfolio.netlify.app/#resume-section</loc>
+        <lastmod>2024-03-24</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://kushalpipaliyaportfolio.netlify.app/#about-section</loc>
+        <lastmod>2024-03-24</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://kushalpipaliyaportfolio.netlify.app/#mywork-section</loc>
+        <lastmod>2024-03-24</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://kushalpipaliyaportfolio.netlify.app/#contact-section</loc>
+        <lastmod>2024-03-24</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+ <url>
+        <loc>https://kushalpipaliyaportfolio.netlify.app/projects/project1</loc>
+        <lastmod>2024-03-23</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://kushalpipaliyaportfolio.netlify.app/projects/project2</loc>
         <lastmod>2024-03-22</lastmod>
-        <changefreq>always</changefreq>
-        <priority>0.5</priority>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
     </url>
 </urlset>
