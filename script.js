@@ -106,3 +106,41 @@ if (currentTheme === 'dark') {
 }
 
 toggleSwitch.addEventListener('change', switchTheme);
+
+// toaster
+var toaster = document.getElementById('toaster');
+var message = document.getElementById('toast-message');
+var form = document.getElementById("my-form");
+var submitButton = form.querySelector("button[type='submit']");
+toaster.classList.add('hidden');
+
+function showToaster(str) {
+    message.innerText = str || "Success! Your message has been sent.";
+    toaster.classList.remove('hidden');
+    toaster.classList.add('visible');
+    setTimeout(function () {
+        toaster.classList.remove('visible');
+        toaster.classList.add('hidden');
+    }, 5000);
+}
+
+async function handleSubmit(event) {
+    event.preventDefault();
+    var status = document.getElementById("my-form-status");
+    var data = new FormData(event.target);
+    fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+    }).then(response => {
+        if (response.ok) {
+            showToaster("Thanks for Contacting. We Will Contact You Soon..!");
+            form.reset();
+        }
+    }).catch(error => {
+        status.innerHTML = "Oops! There was a problem submitting your form";
+    });
+}
+form.addEventListener("submit", handleSubmit);
