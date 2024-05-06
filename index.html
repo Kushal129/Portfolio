@@ -2,21 +2,24 @@
 <html lang="en">
 
 <head>
- <!-- SEO Meta Tags -->
-<meta name="author" content="Kushal Pipaliya">
-<meta property="og:url" content="https://portfoliobykushal.netlify.app/">
-<meta property="og:title" content="Kushal Pipaliya | Portfolio">
-<meta property="og:image" content="img/fmy2.png">
-<meta property="og:description" content="Kushal Pipaliya: Web Developer passionate about cybersecurity. Aspiring Penetration Tester.">
-<meta property="og:type" content="website">
-<meta property="og:locale" content="en_IN">
-<meta name="description" content="Kushal Pipaliya: Web Developer with a passion for cybersecurity. Aspiring Penetration Tester, creating and securing digital landscapes.">
-<meta name="keywords" content="Kushal Pipaliya, Portfolio, Web Development, Penetration Testing, Cybersecurity, Frontend Development, Coding, Programming, Problem-solving, Communication Skills, IT Professional, Innovative Coder, Web Security, Network Security, Information Security, Vulnerability Assessment, Secure Coding Practices, Exploit Development, Reverse Engineering, Incident Response">
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://portfoliobykushal.netlify.app/">
-<link rel="manifest" href="/manifest.json">
-<meta name="google-site-verification" content="Or1U_3M_2K1vDRKgWW8ii5T-WHMPursFONAhimY-fec">
-<!-- End of SEO Meta Tags -->
+    <!-- SEO Meta Tags -->
+    <meta name="author" content="Kushal Pipaliya">
+    <meta property="og:url" content="https://portfoliobykushal.netlify.app/">
+    <meta property="og:title" content="Kushal Pipaliya | Portfolio">
+    <meta property="og:image" content="img/fmy2.png">
+    <meta property="og:description"
+        content="Kushal Pipaliya: Web Developer passionate about cybersecurity. Aspiring Penetration Tester.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_IN">
+    <meta name="description"
+        content="Kushal Pipaliya: Web Developer with a passion for cybersecurity. Aspiring Penetration Tester, creating and securing digital landscapes.">
+    <meta name="keywords"
+        content="Kushal Pipaliya, Portfolio, Web Development, Penetration Testing, Cybersecurity, Frontend Development, Coding, Programming, Problem-solving, Communication Skills, IT Professional, Innovative Coder, Web Security, Network Security, Information Security, Vulnerability Assessment, Secure Coding Practices, Exploit Development, Reverse Engineering, Incident Response">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://portfoliobykushal.netlify.app/">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="google-site-verification" content="Or1U_3M_2K1vDRKgWW8ii5T-WHMPursFONAhimY-fec">
+    <!-- End of SEO Meta Tags -->
 
 
     <!-- External Scripts and Styles -->
@@ -24,6 +27,9 @@
     <script src="https://unpkg.com/scrollreveal@4/dist/scrollreveal.min.js"></script>
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Include Glide.js CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
     <script src="https://static-bundles.visme.co/forms/vismeforms-embed.js"></script>
@@ -36,7 +42,7 @@
 </head>
 
 <body class="bg-black dark-mode">
-    <div id="loader" class="center"></div>
+    <div id="loader" class="dark-mode fixed inset-0 flex justify-center items-center"></div>
     <nav class="nav fixed w-full z-10 transition duration-500 ease-in-out navbar" id="navbar">
         <div class="container mx-auto flex items-center justify-between p-2">
             <a href="#home-section" class="font-bold text-3xl ml-8 text-[#237d07] hover:text-[#299f04]">KH.Pipaliya</a>
@@ -55,28 +61,57 @@
                     <input type="checkbox" id="dark-mode-toggle" />
                     <label for="dark-mode-toggle"></label>
                 </div>
-            
-            <div class="hidden md:flex text-xl flex-col md:flex-row md:items-center md:justify-end md:space-x-4"
-                id="nav-links">
-                <a href="#home-section" class="nav-link">Home<span class="active-underline"></span></a>
-                <a href="#resume-section" class="nav-link">Resume<span class="active-underline"></span></a>
-                <a href="#about-section" class="nav-link">About<span class="active-underline"></span></a>
-                <a href="#mywork-section" class="nav-link">Work<span class="active-underline"></span></a>
-                <a href="#contact-section" class="nav-link">Contact<span class="active-underline"></span></a>
+
+                <div class="hidden md:flex text-xl flex-col md:flex-row md:items-center md:justify-end md:space-x-4"
+                    id="nav-links">
+                    <a href="#home-section" class="nav-link">Home<span class="active-underline"></span></a>
+                    <a href="#resume-section" class="nav-link">Resume<span class="active-underline"></span></a>
+                    <a href="#about-section" class="nav-link">About<span class="active-underline"></span></a>
+                    <a href="#mywork-section" class="nav-link">Work<span class="active-underline"></span></a>
+                    <a href="#contact-section" class="nav-link">Contact<span class="active-underline"></span></a>
+                </div>
             </div>
         </div>
     </nav>
     <!-- Main Content -->
     <section class="container mx-auto p-8 section" id="home-section">
+
         <div class="flex flex-wrap mt-5 items-center justify-center about" id="my-section">
-            <div class="w-full md:w-1/2 lg:w-1/2 p-4" id="left-content">
+            <div class="w-full md:w-1/2 lg:w-1/2 p-4 mb-5" id="left-content">
                 <div class="flex flex-col items-start justify-center h-full ftco-animate fadeInUp ftco-animated">
-                    <span class="text-[#237d07] text-3xl mt-3">Hey!</span>
-                    <h1 class="text-4xl im md:text-5xl lg:text-6xl font-bold text-white my-4">I'm <span
-                            class="text-[#237d07]">KUSHAL PIPALIYA</span></h1>
-                    <p class="text-lg mb-4 text-gray-400">Welcome to My Portfolio. Let's Work something Amazing
-                        Together...!</p>
-                    <div class="flex flex-col sm:flex-row text-center space-y-4 sm:space-y-0 sm:space-x-4">
+                    <span class="cust text-[#237d07] text-3xl mt-3">Hey <span class="cust">!</span></span>
+
+                    <h1 class="text-4xl im md:text-5xl lg:text-6xl font-bold text-white my-4">
+                        <span class="cust"> I'm </span><span class="cust text-[#237d07]">KUSHAL</span> <span
+                            class="cust text-[#237d07]">PIPALIYA </span>
+                    </h1>
+
+                    <p class="text-xl mb-4 text-gray-400">
+                        <span class="cust">🎨 Welcome </span>
+                        <span class="cust">to </span>
+                        <span class="cust">My </span>
+                        <span class="cust">Vibrant </span>
+                        <span class="cust">Digital </span>
+                        <span class="cust">Gallery! 🌟</span>
+                        <br>
+                        <span class="cust">Dive </span>
+                        <span class="cust">into </span>
+                        <span class="cust">a </span>
+                        <span class="cust">World </span>
+                        <span class="cust">of </span>
+                        <span class="cust">Innovation </span>
+                        <span class="cust">and </span>
+                        <span class="cust">Imagination. </span>
+                        <br>
+                        <span class="cust">Let's </span>
+                        <span class="cust">Craft </span>
+                        <span class="cust">Digital </span>
+                        <span class="cust">Magic </span>
+                        <span class="cust">Together! 🚀✨</span>
+                    </p>
+                    
+                    
+                    <div class="flex flex-col sm:flex-row text-center space-y-4 sm:space-y-0 sm:space-x-4 fade-in">
                         <a href="#contact-section"
                             class="block bg-[#237d07] text-white font-bold py-3 px-8 rounded-full transition duration-300 ease-in-out hover:bg-[#299f04]">
                             Get in Touch
@@ -85,7 +120,8 @@
                             class="block bg-transparent text-[#237d07] border-1 border-[#237d07] py-3 px-6 rounded-full transition duration-300 ease-in-out hover:text-[#299f04] hover:border-[#299f04]">
                             My Works
                         </a> -->
-                        <a href="kushal_resume.pdf" download class="block bg-transparent text-[#237d07] border-1 border-[#237d07] py-3 px-6 rounded-full transition duration-300 ease-in-out hover:text-[#299f04] hover:border-[#299f04]">
+                        <a href="kushal_resume.pdf" download
+                            class="block bg-transparent text-[#237d07] border-1 border-[#237d07] py-3 px-6 rounded-full transition duration-300 ease-in-out hover:text-[#299f04] hover:border-[#299f04] fade-in">
                             Download Resume
                         </a>
                     </div>
@@ -103,14 +139,14 @@
         <div class="max-w-2xl w-full mx-auto fade-in">
             <div class="text-center pb-5 fade-in-right">
                 <b class="res text-5xl font-bold mb-2">Resume</b>
-                <p class="text-gray-400 mt-2">Embark on a journey through a realm of rich experiences, profound expertise,
+                <p class="text-gray-400 mt-2">Embark on a journey through a realm of rich experiences, profound
+                    expertise,
                     and a commitment to
                     education. Witness the unfolding of achievements and the brilliance of honed skills. Delve into the
                     narrative that molds my professional profile, revealing a fervor for continuous growth and
                     innovation.</p>
             </div>
-            <div
-                class="bg-black p-4 m-3 bg-[#09a64314] hover:bg-[#16a34a29] rounded-md transition duration-300 fade-in">
+            <div class="p-4 m-3 bg-[#09a64314] hover:bg-[#16a34a29] rounded-md transition duration-300 fade-in">
                 <span class="text-3xl font-bold">2021-2024</span>
                 <h2 class="text-lg font-bold text-gray-600 mb-2">Bachelor's Degree of B.Sc(IT)</h2>
                 <span class="wrd text-gray-300">Uka Tarsadia University, Bardoli (UTU)</span>
@@ -121,24 +157,24 @@
                 <p class="wrd text-gray-300 mt-4">With an outstanding academic achievement.
                     successfully completed my degree in B.Sc. in IT from Uka Tarsadia University.</p>
             </div>
-            <div
-                class="bg-black p-4 m-3 bg-[#09a64314] hover:bg-[#16a34a29] rounded-md transition duration-300 fade-in">
+            <div class="p-4 m-3 bg-[#09a64314] hover:bg-[#16a34a29] rounded-md transition duration-300 fade-in">
                 <span class="text-3xl font-bold">2019-2020</span>
                 <h2 class="wrd text-lg font-bold text-gray-600 mb-2">12th (Higher Secondary Examination)</h2>
                 <span class="wrd text-gray-300">Gujarat Secondary and Higher Secondary Education Board</span>
-                <p class="wrd text-gray-300 mt-4">Successfully cleared 12th board (HSC) exam with an impressive 74% in the
+                <p class="wrd text-gray-300 mt-4">Successfully cleared 12th board (HSC) exam with an impressive 74% in
+                    the
                     science stream at Gujarat Secondary and Higher Secondary Board (Jeevan Bharti Educational School),
                     showcasing my strong academic performance and dedication to the field of science.</p>
             </div>
-            <div
-                class="bg-black p-4 m-3 bg-[#09a64314] hover:bg-[#16a34a29] rounded-md transition duration-300  fade-in">
+            <div class="p-4 m-3 bg-[#09a64314] hover:bg-[#16a34a29] rounded-md transition duration-300  fade-in">
                 <span class="text-3xl font-bold">2017-2018</span>
                 <h2 class="text-lg font-bold text-gray-600 mb-2">10th (Secondary School Examination)</h2>
                 <span class="wrd text-gray-300">Gujarat Secondary and Higher Secondary Education Board</span>
                 <p class="wrd text-gray-300 mt-4">Achieved remarkable success in the 10th board (SSC) exam, securing an
                     impressive 79% overall in studies at Gujarat Secondary and Higher Secondary Board (D D Radadiya
                     Vidhyalaya Gujarati Medium Schools Schools).</p>
-                <p class="wrd text-gray-300 mt-4">Demonstrates commitment to academic excellence and a strong foundation in
+                <p class="wrd text-gray-300 mt-4">Demonstrates commitment to academic excellence and a strong foundation
+                    in
                     various subjects.</p>
             </div>
         </div>
@@ -150,8 +186,8 @@
         <section class="container mx-auto p-8 flex flex-col md:flex-row">
             <div class="flex-1 mb-8 md:mr-6 fade-in">
                 <div class="mb-4">
-                    <h2 class="text-3xl font-bold mb-2">$ dir /a</h2>
-                    <h2 class="text-3xl font-bold mb-2 mt-3">Creative Developer</h2>
+                    <h2 class="mainwrd text-3xl font-bold mb-2">$ dir /a</h2>
+                    <h2 class="mainwrd text-3xl font-bold mb-2 mt-3">Creative Developer</h2>
                     <p class="text-lg text-neutral-400">
                         As a budding web developer, I am eager to dive into the world of coding and crafting digital
                         solutions. Passionate about web development, I am committed to building interactive and
@@ -186,8 +222,8 @@
 <!-- Ethical Hacker Section -->
         <div class="flex-1 fade-in">
             <div class="mb-4">
-                <h2 class="text-3xl font-bold mb-2">$ ls -a</h2>
-                <h2 class="text-3xl font-bold mb-2 mt-3">Cyber World</h2>
+                <h2 class="mainwrd text-3xl font-bold mb-2">$ ls -a</h2>
+                <h2 class="mainwrd text-3xl font-bold mb-2 mt-3">Cyber World</h2>
                 <p class="text-lg text-neutral-400"> As an aspiring cybersecurity enthusiast, I'm excited to dive into the world of digital defense and penetration testing. My journey begins with a strong foundation in cybersecurity basics, networking fundamentals, and cryptography.
                     Eager to explore ethical hacking, I'm committed to understanding Linux and Windows security, along with hands-on experiences to enhance my practical skills. Embracing the challenges of a beginner, I am fueled by continuous learning, staying abreast of cybersecurity trends, and cultivating a strong ethical hacking mindset.
                     Join me in this exciting adventure as I take my first steps into the dynamic realm of cybersecurity and penetration testing.
@@ -243,12 +279,10 @@
         </div>
     </div>
     <!-- Project Details -->
-    
-    <section class="mywork flex items-center justify-center md:h-screen section text-white fade-in" id="mywork-section">
-      
-        <div class="max-w-screen-lg w-full border border-gray-800 rounded-lg shadow-lg">
+    <section class="mywork flex items-center justify-center md:h-screen section text-white fade-in m-3" id="mywork-section">
+        <div class="myworkb max-w-screen-lg w-xl md:w-sm border border-gray-800">
             <div class="text-center p-4">
-                <div class="flex justify-between items-center p-4 rounded-lg shadow-md">
+                <div class="flex justify-between items-center p-4 rounded-lg ">
                     <div class="flex items-center">
                         <p class="text-3xl text-[#237d07] font-bold">My Work</p>
                     </div>
@@ -258,63 +292,111 @@
                         <div class="w-4 h-4 rounded-full bg-red-500"></div>
                     </div>
                 </div>
-                
-                <hr class="myhr bg-white">
-                <div class="grid grid-cols-1 mt-5 text-gray-400 md:grid-cols-2 lg:grid-cols-3 gap-4 font-sans">
-                    <div class="border bg-black card rounded-lg p-5 overflow-hidden shadow-md transition-transform transform hover:scale-105">
-                        <img class="w-full h-32 md:h-16 object-center" src="https://www.svgrepo.com/show/261945/web-development.svg" alt="HTML/CSS/JS">
-                        <div class="p-2">
-                            <h3 class="text-md md:text-lg font-bold mb-1">HTML/CSS/JS Project</h3>
-                            <a href="https://www.github.com/Kushal129/" class="text-xs text-gray-500 hover:text-gray-300">View My GitHub...!</a>
-                        </div>
-                    </div>
-                    <div class="border bg-black card rounded-lg p-5 overflow-hidden shadow-md transition-transform transform hover:scale-105">
-                        <img class="w-full h-32 md:h-16 object-center" src="https://cdn.worldvectorlogo.com/logos/c--4.svg" alt="C#">
-                        <div class="p-2">
-                            <h3 class="text-md md:text-lg font-bold mb-1">C# Project</h3>
-                            <a href="https://www.github.com/Kushal129/" class="text-xs text-gray-500 hover:text-gray-300">View My GitHub...!</a>
-                        </div>
-                    </div>
-    
-                    <!-- Add responsive classes for mobile layout -->
-                    <div class="md:hidden"></div>
-    
-                    <div class="border bg-black card rounded-lg p-5 overflow-hidden shadow-md transition-transform transform hover:scale-105">
-                        <img class="w-full h-32 md:h-16 object-center" src="https://www.svgrepo.com/show/452088/php.svg" alt="PHP">
-                        <div class="p-2">
-                            <h3 class="text-md md:text-lg font-bold mb-1">PHP Project</h3>
-                            <a href="https://www.github.com/Kushal129/" class="text-xs text-gray-500 hover:text-gray-300">View My GitHub...!</a>
-                        </div>
-                    </div>
-    
-                    <div class="border bg-black card rounded-lg p-5 overflow-hidden shadow-md transition-transform transform hover:scale-105">
-                        <img class="w-full h-32 md:h-16 object-center" src="https://upload.wikimedia.org/wikipedia/commons/e/ee/.NET_Core_Logo.svg" alt=".Net">
-                        <div class="p-2">
-                            <h3 class="text-md md:text-lg font-bold mb-1">.Net Project</h3>
-                            <a href="https://www.github.com/Kushal129/" class="text-xs text-gray-500 hover:text-gray-300">View My GitHub...!</a>
-                        </div>
-                    </div>
-    
-                    <div class="border bg-black card rounded-lg p-5 overflow-hidden shadow-md transition-transform transform hover:scale-105">
-                        <img class="w-full h-32 md:h-16 object-center" src="https://cdn.worldvectorlogo.com/logos/java-4.svg" alt="Java">
-                        <div class="p-2">
-                            <h3 class="text-md md:text-lg font-bold mb-1">Java Project</h3>
-                            <a href="https://www.github.com/Kushal129/" class="text-xs text-gray-500 hover:text-gray-300">View My GitHub...!</a>
-                        </div>
-                    </div>
-    
-                    <div class="border bg-black card rounded-lg p-5 overflow-hidden shadow-md transition-transform transform hover:scale-105">
-                        <img class="w-full h-32 md:h-16 object-center" src="https://www.svgrepo.com/show/452091/python.svg" alt="Python">
-                        <div class="p-2">
-                            <h3 class="text-md md:text-lg font-bold mb-1">Python Project</h3>
-                            <a href="https://www.github.com/Kushal129/" class="text-xs text-gray-500 hover:text-gray-300">View My GitHub...!</a>
-                        </div>
+                <hr class="myhr">
+                <div class="glide mt-5">
+                    <div class="glide__track" data-glide-el="track">
+                        <ul class="glide__slides">
+                            <li class="glide__slide">
+                                <div class="max-w-sm mx-auto overflow-hidden">
+                                    <img class="w-full h-32 md:h-32 object-center" src="https://www.svgrepo.com/show/261945/web-development.svg"
+                                        alt="HTML/CSS/JS">
+                                    <div class="px-6 py-4">
+                                        <div class="font-bold text-xl text-zinc-600 mb-2">HTML/CSS/JS Project's</div>
+                                        <p class="text-gray-700 text-base">
+                                            <a href="https://www.github.com/Kushal129/"
+                                class="text-xs text-gray-500 hover:text-gray-300">View My GitHub...!</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="max-w-sm mx-auto overflow-hidden">
+                                    <img class="w-full h-32 md:h-32 object-center" src="https://www.svgrepo.com/show/452092/react.svg"
+                                        alt="Placeholder Image">
+                                    <div class="px-6 py-4">
+                                        <div class="font-bold text-xl text-zinc-600 mb-2">React Project's</div>
+                                        <p class="text-gray-700 text-base">
+                                           <a href="https://www.github.com/Kushal129/"
+                                class="text-xs text-gray-500 hover:text-gray-300">View My GitHub...!</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="max-w-sm mx-auto overflow-hidden">
+                                    <img class="w-full h-32 md:h-32 object-center" src="https://cdn.worldvectorlogo.com/logos/c--4.svg"
+                                        alt="C# ">
+                                    <div class="px-6 py-4">
+                                        <div class="font-bold text-xl text-zinc-600 mb-2">C# Project's</div>
+                                        <p class="text-gray-700 text-base">
+                                            <a href="https://www.github.com/Kushal129/"
+                                            class="text-xs text-gray-500 hover:text-gray-300">View My GitHub...!</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="max-w-sm mx-auto overflow-hidden">
+                                    <img class="w-full h-32 md:h-32 object-center" src="https://www.svgrepo.com/show/452088/php.svg"
+                                        alt="PHP Project">
+                                    <div class="px-6 py-4">
+                                        <div class="font-bold text-xl text-zinc-600 mb-2">PHP Project's</div>
+                                        <p class="text-gray-700 text-base">
+                                           <a href="https://www.github.com/Kushal129/"
+                                class="text-xs text-gray-500 hover:text-gray-300">View My GitHub...!</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="max-w-sm mx-auto overflow-hidden">
+                                    <img class="w-full h-32 md:h-32 object-center" src="https://upload.wikimedia.org/wikipedia/commons/e/ee/.NET_Core_Logo.svg"
+                                        alt=".Net Project">
+                                    <div class="px-6 py-4">
+                                        <div class="font-bold text-xl text-zinc-600 mb-2">.Net Project</div>
+                                        <p class="text-gray-700 text-base">
+                                           <a href="https://www.github.com/Kushal129/"
+                                class="text-xs text-gray-500 hover:text-gray-300">View My GitHub...!</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="glide__slide">
+                                <div class="max-w-sm mx-auto overflow-hidden">
+                                    <img class="w-full h-32 md:h-32 object-center" src="https://cdn.worldvectorlogo.com/logos/java-4.svg"
+                                        alt="Python">
+                                    <div class="px-6 py-4">
+                                        <div class="font-bold text-xl text-zinc-600 mb-2">Python Project's</div>
+                                        <p class="text-gray-700 text-base">
+                                           <a href="https://www.github.com/Kushal129/"
+                                class="text-xs text-gray-500 hover:text-gray-300">View My GitHub...!</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="glide__slide">
+                                <div class="max-w-sm mx-auto overflow-hidden">
+                                    <img class="w-full h-32 md:h-32 object-center" src="https://www.svgrepo.com/show/452088/php.svg"
+                                        alt="Placeholder Image">
+                                    <div class="px-6 py-4">
+                                        <div class="font-bold text-xl text-zinc-600 mb-2">React Project's</div>
+                                        <p class="text-gray-700 text-base">
+                                           <a href="https://www.github.com/Kushal129/"
+                                class="text-xs text-gray-500 hover:text-gray-300">View My GitHub...!</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
+        </div>
     </section>
-    
+
     <!-- contect us  -->
     <section class="contact dark-mode ftco-section contact-section mt-5 ftco-no-pb text-[#237d07]" id="contact-section">
         <div class="container">
@@ -340,7 +422,7 @@
                             <div class="mb-4">
                                 <label for="email" class="block text-1xl font-bold mb-2">Your
                                     Email:</label>
-                                <input type="email" id="email"  placeholder="abc@example.com"
+                                <input type="email" id="email" placeholder="abc@example.com"
                                     class="w-full px-3 py-2 border-2 rounded shadow-md bg-black text-[#237d07] focus:outline-none focus:border-green-500 focus:ring-0"
                                     required>
                             </div>
@@ -380,40 +462,60 @@
                 data-full-page="false" data-min-height="500px" data-form-id="15538"></div>
         </div> -->
     </section>
-
-    <footer class="relative fade-in" id="footer-section">
-        <div class="mx-auto text-center p-5 text-black z-10 relative">
-          <div class="flex items-center justify-center mb-4">
-            <a href="https://www.github.com/Kushal129" class="mx-2 footer-icon">
-              <img src="img/logo/git.png" alt="GitHub" class="w-6 h-auto logo-green">
-            </a>
-            <a href="https://www.linkedin.com/in/kushal-pipaliya" target="_blank" class="mx-2 footer-icon">
-              <img src="img/logo/linkd.png" alt="LinkedIn" class="w-6 h-auto logo-green">
-            </a>
-            <a href="https://www.instagram.com/_kushal_pipaliya/" target="_blank" class="mx-2 footer-icon">
-                <img src="img/logo/insta.png" alt="Instagram" class="w-6 h-auto logo-green">
-            </a>
-            <a href="https://www.facebook.com/kushal.pipaliya.12?mibextid=JRoKGi" target="_blank" class="mx-2 footer-icon">
-                <img src="img/logo/fb.png" alt="Facebook" class="w-6 h-auto logo-green">
-            </a>
-            <a href="https://twitter.com/PipaliyaKu78237" target="_blank" class="mx-2 footer-icon">
-                <img src="img/logo/twt.png" alt="Twitter" class="w-6 h-auto logo-green">
-            </a>
-            <a href="mailto:kushalhpipaliya01@email.com" class="mx-2 footer-icon">
-                <img src="img/logo/email.png" alt="Email" class="w-6 h-auto logo-green">
+    <div class="fixed bottom-0 right-0 z-10">
+        <div>
+            <a id="scroll-to-top" title="home-section" href="#" class="block w-16 h-16">
+                <img class="w-8 h-8" src="https://img.icons8.com/ios/50/40C057/circled-up.png" alt="circled-up" />
             </a>
         </div>
-        <p class="text-sm text-[#049309]">&copy; Copyright by Kushal Pipaliya <span id="currentYear"></span> All rights reserved.</p>
     </div>
-    <div class="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-[#049309] to-transparent opacity-70 animate-pulse rounded-lg"></div>
-</footer>
-      
+    <footer class="relative fade-in" id="footer-section">
+        <div class="mx-auto text-center p-5 text-black z-10 relative">
+            <div class="flex items-center justify-center mb-4">
+                <a href="https://www.github.com/Kushal129" class="mx-2 footer-icon">
+                    <img src="img/logo/git.png" alt="GitHub" class="w-6 h-auto logo-green">
+                </a>
+                <a href="https://www.linkedin.com/in/kushal-pipaliya" target="_blank" class="mx-2 footer-icon">
+                    <img src="img/logo/linkd.png" alt="LinkedIn" class="w-6 h-auto logo-green">
+                </a>
+                <a href="https://www.instagram.com/_kushal_pipaliya/" target="_blank" class="mx-2 footer-icon">
+                    <img src="img/logo/insta.png" alt="Instagram" class="w-6 h-auto logo-green">
+                </a>
+                <a href="https://www.facebook.com/kushal.pipaliya.12?mibextid=JRoKGi" target="_blank"
+                    class="mx-2 footer-icon">
+                    <img src="img/logo/fb.png" alt="Facebook" class="w-6 h-auto logo-green">
+                </a>
+                <a href="https://twitter.com/PipaliyaKu78237" target="_blank" class="mx-2 footer-icon">
+                    <img src="img/logo/twt.png" alt="Twitter" class="w-6 h-auto logo-green">
+                </a>
+                <a href="mailto:kushalhpipaliya01@email.com" class="mx-2 footer-icon">
+                    <img src="img/logo/email.png" alt="Email" class="w-6 h-auto logo-green">
+                </a>
+            </div>
+            <p class="text-sm text-[#049309]">&copy; Copyright by Kushal Pipaliya <span id="currentYear"></span> All
+                rights reserved.</p>
+        </div>
+        <div
+            class="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-[#049309] to-transparent opacity-70 animate-pulse rounded-lg">
+        </div>
+    </footer>
+
     <div id="toaster" class="toaster">
         <img src="/img/hand.png" alt="Success Icon" class="icon">
         <span id="toast-message" class="message"></span>
     </div>
     <script src="script.js"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/glide.min.js"></script>
+
+    <script>
+        new Glide('.glide', {
+            type: 'carousel',
+            autoplay: 2000, 
+            // hoverpause: true, // Pause autoplay on hover 
+            perView: 3
+        }).mount();
+    </script>
 </body>
 
 </html>
