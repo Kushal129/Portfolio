@@ -66,9 +66,7 @@ body.light-mode .mainwrd{
   width: 100%;
   border: 1px solid #000;
   border-radius: 0.5rem;
-  box-shadow: 0 0 10px 5px rgba(0, 86, 6, 0.5), 
-              0 0 20px 10px rgba(1, 87, 9, 0.3),
-              0 0 30px 15px rgba(5, 70, 0, 0.2);
+  box-shadow: 0 8px 5px 3px rgba(3, 168, 14, 0.436);
 }
 
 
@@ -498,6 +496,14 @@ body.light-mode #loader{
 
 .cust:nth-child(23) {
   animation: fade-in 0.9s 2.3s forwards cubic-bezier(0.2, 0, 0.8, 0);
+}
+
+.cust:nth-child(24) {
+  animation: fade-in 0.9s 2.4s forwards cubic-bezier(0.2, 0, 0.8, 0);
+}
+
+.cust:nth-child(25) {
+  animation: fade-in 0.9s 2.5s forwards cubic-bezier(0.2, 0, 0.8, 0);
 }
 
 @keyframes fade-in {
