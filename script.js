@@ -3,12 +3,16 @@ document.getElementById("currentYear").innerText = new Date().getFullYear();
 
 document.addEventListener('scroll', function () {
     var fadeIns = document.querySelectorAll('.fade-in');
+    var custForm = document.querySelector('.cust');
 
     fadeIns.forEach(function (fadeIn) {
         if (isElementVisible(fadeIn)) {
             fadeIn.classList.add('visible');
         }
     });
+    if (isElementVisible(custForm)) {
+        custForm.classList.add('animate__animated', 'animate__shakeX');
+    }
 });
 
 function isElementVisible(el) {
@@ -17,14 +21,13 @@ function isElementVisible(el) {
     return !(rect.bottom < 0 || rect.top - windowHeight >= 0);
 }
 
-
 document.onreadystatechange = function () {
     var body = document.querySelector("body");
     var loader = document.querySelector("#loader");
 
     if (document.readyState !== "complete") {
         body.style.visibility = "hidden";
-        loader.style.visibility = "visible";
+        loader.style.display = "block";
     } else {
         loader.style.display = "none";
         body.style.visibility = "visible";
@@ -144,4 +147,3 @@ async function handleSubmit(event) {
     });
 }
 form.addEventListener("submit", handleSubmit);
-

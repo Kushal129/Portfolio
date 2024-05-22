@@ -307,6 +307,11 @@ body.light-mode #loader{
     transition: transform 0.3s ease;
 }
 
+.image-error img {
+  display: none;
+}
+
+
 .nav-link:hover::after {
     transform: scaleX(1);
 }
