@@ -1,4 +1,6 @@
+
 body {
+  font-family: "Fira Code", monospace;
     scroll-behavior: smooth;
     color: #049309;
     background: black;
