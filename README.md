@@ -64,21 +64,23 @@ I am Kushal Pipaliya, a web developer passionate about cybersecurity and aspirin
 **Details:** Secured 79% overall at D D Radadiya Vidhyalaya.
 
 ## Projects
-
-### HTML/CSS/JS Projects
-[![HTML/CSS/JS Projects](https://www.svgrepo.com/show/261945/web-development.svg)](https://www.github.com/Kushal129/)
-
-### C# Projects
-[![C# Projects](https://cdn.worldvectorlogo.com/logos/c--4.svg)](https://www.github.com/Kushal129/)
-
-### PHP Projects
-[![PHP Projects](https://www.svgrepo.com/show/452088/php.svg)](https://www.github.com/Kushal129/)
-
-### .Net Projects
-[![.Net Projects](https://upload.wikimedia.org/wikipedia/commons/e/ee/.NET_Core_Logo.svg)](https://www.github.com/Kushal129/)
-
-### Python Projects
-[![Python Projects](https://www.svgrepo.com/show/452091/python.svg)](https://www.github.com/Kushal129/)
+<div align="center">
+  <a href="https://www.github.com/Kushal129/" target="_blank">
+    <img src="https://www.svgrepo.com/show/261945/web-development.svg" alt="HTML/CSS/JS Projects" width="64" height="64">
+  </a>
+  <a href="https://www.github.com/Kushal129/" target="_blank">
+    <img src="https://cdn.worldvectorlogo.com/logos/c--4.svg" alt="C# Projects" width="64" height="64">
+  </a>
+  <a href="https://www.github.com/Kushal129/" target="_blank">
+    <img src="https://www.svgrepo.com/show/452088/php.svg" alt="PHP Projects" width="64" height="64">
+  </a>
+  <a href="https://www.github.com/Kushal129/" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/e/ee/.NET_Core_Logo.svg" alt=".Net Projects" width="64" height="64">
+  </a>
+  <a href="https://www.github.com/Kushal129/" target="_blank">
+    <img src="https://www.svgrepo.com/show/452091/python.svg" alt="Python Projects" width="64" height="64">
+  </a>
+</div>
 
 ## Contact
 
