@@ -147,3 +147,78 @@ async function handleSubmit(event) {
     });
 }
 form.addEventListener("submit", handleSubmit);
+
+// -----------------------------  buttton download resume   ------------------------------------
+
+const button = document.getElementById("buttondwn");
+const arrow = document.getElementById("arrow");
+const progress = document.getElementById("progress");
+const check = document.getElementById("check");
+const downloadLink = document.getElementById("downloadLink");
+
+let loadingTime = 800;
+let blocked = false;
+
+button.addEventListener("click", () => {
+  if(blocked) return;
+  blocked = true;
+  
+  arrow.classList.add("animate-down");
+
+  let percent = 0;
+  let load = setInterval(() => {
+    percent++;
+    progress.style.height = percent + "%";
+  }, loadingTime / 100);
+
+  setTimeout(() => {
+    clearInterval(load);
+
+    setTimeout(() => {
+      progress.classList.remove("bg-opacity-20");
+      progress.classList.add("bg-opacity-0");
+      check.classList.remove("w-0");
+      check.classList.add("w-5");
+
+      setTimeout(() => {
+        check.classList.add("w-0");
+        check.classList.remove("w-5");
+        setTimeout(() => {
+          reset();
+          downloadFile();
+        }, 1000);
+      }, 1000);
+    }, 500);
+  }, loadingTime);
+});
+
+function downloadFile() {
+  downloadLink.click();
+}
+
+
+// ----------------------------------------------------------------------------------------
+
+
+function reset() {  
+  progress.style.height = "0%";
+  arrow.classList.remove("animate-down");
+  
+  setTimeout(() => {
+    progress.classList.remove("bg-opacity-0");
+    progress.classList.add("bg-opacity-20");
+    blocked = false;
+  }, 200)
+}
+
+document.addEventListener('scroll', function() {
+    const scrollPosition = window.scrollY;
+    const homeSectionHeight = document.getElementById('home-section').offsetHeight;
+    const scrollToTopButton = document.getElementById('scroll-to-top');
+
+    if (scrollPosition >= homeSectionHeight) {
+        scrollToTopButton.classList.remove('hidden');
+    } else {
+        scrollToTopButton.classList.add('hidden');
+    }
+});

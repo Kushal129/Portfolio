@@ -35,13 +35,13 @@
     <!-- Manifest and Verification -->
     <link rel="manifest" href="/manifest.json">
     <meta name="google-site-verification" content="Or1U_3M_2K1vDRKgWW8ii5T-WHMPursFONAhimY-fec">
-    
+
     <!-- End of SEO Meta Tags -->
 
 
     <!-- External Scripts and Styles -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-                            
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
@@ -131,16 +131,43 @@
                         <span class="cust">Together! 🚀✨</span>
                     </p>
 
-
                     <div class="flex flex-col sm:flex-row text-center space-y-4 sm:space-y-0 sm:space-x-4 mt-5">
-                        <span class="cust"><a href="#contact-section"
-                                class="block bg-[#237d07] text-white font-bold py-3 px-8 rounded-full transition duration-300 ease-in-out hover:bg-[#299f04]">
+                        <!-- <span class="cust">
+                            <a href="#contact-section"
+                                class="flex justify-between items-center bg-transparent text-white border-1 border-[#237d07] text-sm rounded-md hover:bg-green-600">
                                 Get in Touch
-                            </a></span>
-                        <span class="cust"><a href="kushal_resume.pdf" download
-                                class="block bg-transparent text-[#237d07] border-1 border-[#237d07] py-3 px-6 rounded-full transition duration-300 ease-in-out hover:text-[#299f04] hover:border-[#299f04]">
-                                Download Resume
-                            </a></span>
+                            </a>    
+                        </span> -->
+                        <span class="cust"><a href="#contact-section" style="padding: 11px;"
+                                class="dwn rounded-md shadow bg-transparent border-1 text-white border-[#237d07] cursor-pointer flex justify-center items-center ">
+                                Get in Touch
+                            </a>
+                        </span>
+                        <span class="cust"><a id="buttondwn"
+                                class="group rounded-md shadow bg-[#237d07] text-white cursor-pointer flex justify-between items-center overflow-hidden transition-all hover:glow">
+                                <div
+                                    class="relative w-12 h-12 bg-black bg-opacity-20 text-white flex justify-center items-center transition-all">
+                                    <svg id="arrow" class="w-5 h-5 transition-all group-hover:-translate-y-1"
+                                        fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                                    </svg>
+                                    <svg id="check"
+                                        class="absolute z-10 w-0 top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 text-white transition-all"
+                                        fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                            d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <div id="progress"
+                                        class="absolute w-full h-0 bg-black bg-opacity-30 top-0 duration-200"></div>
+                                </div>
+                                <p class="px-3">Download Resume</p>
+                            </a>
+                        </span>
+
+                        <a id="downloadLink" href="kushal_resume.pdf" download style="display:none;"></a>
                     </div>
                 </div>
             </div>
@@ -152,7 +179,8 @@
     </section>
 
     <hr class="w-4/5 mx-auto mb-5" data-aos="fade-up" data-aos-duration="4000">
-    <div class="max-w-2xl w-full mx-auto" data-aos="fade-up" data-aos-duration="4000">
+
+    <div class="max-w-2xl w-full mx-auto" id="resume-section" data-aos="fade-up" data-aos-duration="4000">
         <div class="text-center pb-5 ">
             <b class="res text-5xl font-bold mb-2">Resume</b>
             <p class="text-gray-400 mt-2">Embark on a journey through a realm of rich experiences, profound
@@ -162,7 +190,8 @@
                 narrative that molds my professional profile, revealing a fervor for continuous growth and
                 innovation.</p>
         </div>
-        <div class="p-4 m-3 bg-[#09a64314] hover:bg-[#16a34a29] rounded-md transition duration-300" data-aos="fade-left" data-aos-duration="3000">
+        <div class="p-4 m-3 bg-[#09a64314] hover:bg-[#16a34a29] rounded-md transition duration-300" data-aos="fade-left"
+            data-aos-duration="3000">
             <span class="text-3xl font-bold">2021-2024</span>
             <h2 class="text-lg font-bold text-gray-600 mb-2">Bachelor's Degree of B.Sc(IT)</h2>
             <span class="wrd text-gray-300">Uka Tarsadia University, Bardoli (UTU)</span>
@@ -173,7 +202,8 @@
             <p class="wrd text-gray-300 mt-4">With an outstanding academic achievement.
                 successfully completed my degree in B.Sc. in IT from Uka Tarsadia University.</p>
         </div>
-        <div class="p-4 m-3 bg-[#09a64314] hover:bg-[#16a34a29] rounded-md transition duration-300" data-aos="fade-right" data-aos-duration="3000">
+        <div class="p-4 m-3 bg-[#09a64314] hover:bg-[#16a34a29] rounded-md transition duration-300"
+            data-aos="fade-right" data-aos-duration="3000">
             <span class="text-3xl font-bold">2019-2020</span>
             <h2 class="wrd text-lg font-bold text-gray-600 mb-2">12th (Higher Secondary Examination)</h2>
             <span class="wrd text-gray-300">Gujarat Secondary and Higher Secondary Education Board</span>
@@ -182,7 +212,8 @@
                 science stream at Gujarat Secondary and Higher Secondary Board (Jeevan Bharti Educational School),
                 showcasing my strong academic performance and dedication to the field of science.</p>
         </div>
-        <div class="p-4 m-3 bg-[#09a64314] hover:bg-[#16a34a29] rounded-md transition duration-300" data-aos="fade-left" data-aos-duration="3000">
+        <div class="p-4 m-3 bg-[#09a64314] hover:bg-[#16a34a29] rounded-md transition duration-300" data-aos="fade-left"
+            data-aos-duration="3000">
             <span class="text-3xl font-bold">2017-2018</span>
             <h2 class="text-lg font-bold text-gray-600 mb-2">10th (Secondary School Examination)</h2>
             <span class="wrd text-gray-300">Gujarat Secondary and Higher Secondary Education Board</span>
@@ -195,6 +226,7 @@
         </div>
     </div>
     </section>
+
     <hr class="w-4/5 mx-auto mt-5" data-aos="fade-up" data-aos-duration="4000">
 
     <div class="about text-center mt-5 pb-5  section" id="about-section" data-aos="fade-up" data-aos-duration="4000">
@@ -217,7 +249,8 @@
                     </p>
                 </div>
                 <div>
-                    <div class="terminal border border-green-700 p-2 rounded-md bg-zinc-950" data-aos="flip-right" data-aos-duration="2000">
+                    <div class="terminal border border-green-700 p-2 rounded-md bg-zinc-950" data-aos="zoom-in-up"
+                        data-aos-duration="2000">
                         <pre class="p-3 text-left text-white">
 <span class="text-red-700">$</span><span class="text-violet-800">root:\cd\Skills</span>
     <span class="wrd">- HTML5
@@ -245,9 +278,9 @@
                 </p>
             </div>
             <div>
-                <div class="terminal border-1 p-2 rounded-md bg-zinc-950" data-aos="flip-left" data-aos-duration="2000">
+                <div class="terminal border-1 p-2 rounded-md bg-zinc-950" data-aos="zoom-in-up" data-aos-duration="2000">
                     <pre class="p-3 text-left text-white">
-<span class="text-red-700">root@BlueMen:~</span><span class="text-violet-800"># cd /Skills</span>
+<span class="text-red-700">root@Kushal:~</span><span class="text-violet-800"># cd /Skills</span>
     <span class="wrd">- Cybersecurity Basics
     - Networking Fundamentals
     - Linux and Windows Security    
@@ -272,7 +305,7 @@
     </div>
     </section>
     </div>
-    <div  data-aos="zoom-in-up" data-aos-duration="4000">
+    <div data-aos="zoom-in-up" data-aos-duration="4000">
         <div class=" mb-5">
             <div class="flex items-center justify-center">
                 <div class="border-b-2 border-[#237d07] w-16"></div>
@@ -295,7 +328,8 @@
     </div>
 
     <!-- Project Details -->
-    <section class="mywork flex items-center justify-center md:h-screen section text-white m-3" id="mywork-section" data-aos="fade-up" data-aos-duration="4000">
+    <section class="mywork flex items-center justify-center md:h-screen section text-white m-3" id="mywork-section"
+        data-aos="fade-up" data-aos-duration="4000">
         <div class="myworkb max-w-screen-lg w-xl md:w-sm border border-gray-800">
             <div class="text-center p-4">
                 <div class="flex justify-between items-center p-4 rounded-lg ">
@@ -408,7 +442,7 @@
     </section>
 
     <!-- contect us  -->
-    <section class="contact dark-mode ftco-section contact-section mt-5 ftco-no-pb text-[#237d07]" id="contact-section" >
+    <section class="contact dark-mode ftco-section contact-section mt-5 ftco-no-pb text-[#237d07]" id="contact-section">
         <div class="container">
             <div class="row justify-content-center mb-5 pb-3" data-aos="slide-up" data-aos-duration="4000">
                 <div class="col-md-7 heading-section text-center ftco-animate ftco-animated mt-3">
@@ -533,11 +567,11 @@
             animationType: 'slide'
         }).mount();
     </script>
-                                    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-                                    <script>
-                                      AOS.init();
-                                    </script>
-                                
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
 </body>
 
 </html>

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
 body {
   font-family: "Fira Code", monospace;
@@ -12,15 +13,12 @@ body.light-mode .res , .abt {
 body.light-mode .toaster {
   background: #016a01;
   color: rgb(255, 255, 255);
+
 }
-
-
-
 body.light-mode .ad:hover,
 body.light-mode .eml:hover {
   color: rgb(0, 0, 0);
 }
-
 
 body.light-mode{
     background-color: #fff;
@@ -29,9 +27,10 @@ body.light-mode{
 body.light-mode .im  {
     color: #727272 !important; 
 }
-body.light-mode .myhr  {
+body.light-mode .myhr ,.dwn {
   color: #006419 !important; 
 }
+
 body.light-mode .nav {
     background: #ffffff3d ; 
 }
@@ -53,7 +52,7 @@ body.light-mode .card{
 
 }
 body.light-mode .terminal{
-    background: #ffffff ; 
+    background: #00000012 ; 
 }
 
 body.light-mode .wrd{
@@ -70,9 +69,41 @@ body.light-mode .mainwrd{
   border-radius: 0.5rem;
   box-shadow: 0 8px 5px 3px rgba(3, 168, 14, 0.436);
 }
+/* ------------------------------------------------------------------ */
 
 
 
+.bebas {
+  font-family: "Bebas Neue", cursive;
+}
+
+.hover\:glow:hover {
+  filter: drop-shadow(0px 0px 8px rgba(6, 129, 26, 0.568));
+}
+
+.group:hover .group-hover\:\-translate-y-1 {
+  transform: translateY(-0.25rem);
+}
+
+.group:focus .group-focus\:pt-20 {
+  padding-top: 5rem;
+}
+
+.animate-down {
+  transform: translateY(250%) !important;
+}
+
+.animate-up {
+  transform: translateY(-250%) !important;
+}
+
+.hidden {
+  display: none;
+}
+
+
+
+/* --------------------------------------------------------------- */
 .toggle {
     position: relative;
     box-sizing: border-box;
