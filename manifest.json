@@ -3,7 +3,5 @@
   "short_name": "KP Portfolio",
   "description": "Explore the impressive portfolio of Kushal Pipaliya, a skilled Web Developer and Penetration Tester.",
   "start_url": "/",
-  "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#3498db"
+  "display": "standalone"
 }
