@@ -62,13 +62,26 @@ body.light-mode .mainwrd{
   color: #237d07; 
 }
 
-.myworkb {
+body.light-mode .about{
+  color: #000000;
+}
+body.dark-mode .project-card {
+  
+  border-radius: 8px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+
+}
+
+
+/* .myworkb {
   max-width: 100%;
   width: 100%;
   border: 1px solid #000;
   border-radius: 0.5rem;
   box-shadow: 0 8px 5px 3px rgba(3, 168, 14, 0.436);
-}
+} */
 /* ------------------------------------------------------------------ */
 
 
