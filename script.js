@@ -105,7 +105,7 @@ if (currentTheme === 'dark') {
     document.body.classList.add('light-mode');
     toggleSwitch.checked = true;
 } else {
-    document.body.classList.add('dark-mode'); 
+    document.body.classList.add('dark-mode');
 }
 
 toggleSwitch.addEventListener('change', switchTheme);
@@ -160,58 +160,58 @@ let loadingTime = 800;
 let blocked = false;
 
 button.addEventListener("click", () => {
-  if(blocked) return;
-  blocked = true;
-  
-  arrow.classList.add("animate-down");
+    if (blocked) return;
+    blocked = true;
 
-  let percent = 0;
-  let load = setInterval(() => {
-    percent++;
-    progress.style.height = percent + "%";
-  }, loadingTime / 100);
+    arrow.classList.add("animate-down");
 
-  setTimeout(() => {
-    clearInterval(load);
+    let percent = 0;
+    let load = setInterval(() => {
+        percent++;
+        progress.style.height = percent + "%";
+    }, loadingTime / 100);
 
     setTimeout(() => {
-      progress.classList.remove("bg-opacity-20");
-      progress.classList.add("bg-opacity-0");
-      check.classList.remove("w-0");
-      check.classList.add("w-5");
+        clearInterval(load);
 
-      setTimeout(() => {
-        check.classList.add("w-0");
-        check.classList.remove("w-5");
         setTimeout(() => {
-          reset();
-          downloadFile();
-        }, 1000);
-      }, 1000);
-    }, 500);
-  }, loadingTime);
+            progress.classList.remove("bg-opacity-20");
+            progress.classList.add("bg-opacity-0");
+            check.classList.remove("w-0");
+            check.classList.add("w-5");
+
+            setTimeout(() => {
+                check.classList.add("w-0");
+                check.classList.remove("w-5");
+                setTimeout(() => {
+                    reset();
+                    downloadFile();
+                }, 1000);
+            }, 1000);
+        }, 500);
+    }, loadingTime);
 });
 
 function downloadFile() {
-  downloadLink.click();
+    downloadLink.click();
 }
 
 
 // ----------------------------------------------------------------------------------------
 
 
-function reset() {  
-  progress.style.height = "0%";
-  arrow.classList.remove("animate-down");
-  
-  setTimeout(() => {
-    progress.classList.remove("bg-opacity-0");
-    progress.classList.add("bg-opacity-20");
-    blocked = false;
-  }, 200)
+function reset() {
+    progress.style.height = "0%";
+    arrow.classList.remove("animate-down");
+
+    setTimeout(() => {
+        progress.classList.remove("bg-opacity-0");
+        progress.classList.add("bg-opacity-20");
+        blocked = false;
+    }, 200)
 }
 
-document.addEventListener('scroll', function() {
+document.addEventListener('scroll', function () {
     const scrollPosition = window.scrollY;
     const homeSectionHeight = document.getElementById('home-section').offsetHeight;
     const scrollToTopButton = document.getElementById('scroll-to-top');
